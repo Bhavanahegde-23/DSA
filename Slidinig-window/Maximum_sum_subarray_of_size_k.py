@@ -2,9 +2,11 @@
 # - Its sliding window as we got defined window size
 # - Keep track of current sum and max sum , and keep sliding if the window size more than k then remove left element ,
 # if window size equal then update maxsum
-
+## time and space
+# TC: O(n)
+# SC: O(1)
 def max_sum_k(arr , k):
-    maxSum = 0
+    maxSum = float('-inf')
     sum = 0
     l = 0
     for r in range(len(arr)):
